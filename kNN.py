@@ -18,7 +18,7 @@ def Coef_Linear(x,y):
 
 def Prediccion(u,v,t, ref):
     dist = []
-    for fila in ref: #lista con los productos cartesianos para su posterior organización así como el módulo del viento
+    for fila in ref: #lista con los módulos cartesianos para su posterior organización así como el módulo del viento
         dist.append([sqrt(((u - fila[1])**2) + ((v - fila[2])**2) + ((t - fila[3])**2)), fila[0], fila[1], fila[2], fila[3], sqrt((fila[1]**2) + (fila[2]**2))])
     
     dist.sort(key = lambda x: x[0]) #hago una pequeña función lambda que organice el orden en la columna 0
@@ -75,10 +75,13 @@ Predicciones = []
 for a in Predecir:
     Predicciones.append([datetime.now().strftime('%Y-%m-%d'), datetime.now().strftime('%H:%M'), Prediccion(a[-3], a[-2], a[-1], Referencia)])
 
-print('errores de referencia')
+EMA, ECM = errores([columna1[0] for columna1 in Predecir], [columna2[-1] for columna2 in Predicciones])
 
-print(errores([columna1[0] for columna1 in Predecir], [columna2[-1] for columna2 in Predicciones]))
+print('Errores referencia')
 
-print('predicciones')
+print(round(EMA,2),round(ECM,2))
 
-print(Predicciones)
+print('Predicciones')
+
+for i in Predicciones:
+    print(i[0], i[1], round(i[2]))
