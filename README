@@ -19,15 +19,14 @@ la función sum().
 -es_enunciado: Esta es una función secundaria que resulta fundamental en reconocer los diferentes tipos de bloques de entradas atrapando el error que se comete al intentar cambiar
 strings por puntos flotantes cuando dichos carácteres son letras.
 
-Además de estas funciones hay un script externo que toma la ruta en la que se encuentra el ejecutable y en esta busca el archivo de texto de ejemplo, una vez lo encuentra lo lee
+Además de estas funciones hay un script externo que toma la ruta en la que se encuentra el ejecutable y en esta solicita el archivo a leer, una vez lo encuentra lo lee
 y separa en dos bloques de entradas las cuales se les aplicarán las funciones correspondientes para que a posteriori se imprima en pantalla el formato de salida pedido.
 
 ##Nota importante
 
-En los datos de ejemplo sólo hay observaciones por lo que a partir de la línea 2000 lo he separado para que esos datos los considere predictores pero aún se conserve la observación
-medida para poder hacer el cálculo de errores.
+En los datos de ejemplo sólo hay observaciones por lo que los he modificado de tal forma que se conforme al formato de entrada solicitado.
 
 #Uso
 
 Es importante que antes de usarlo, el nombre del archivo a leer sea el mismo en la ruta de lectura en el código del .py además de que su localización debe ser en el mismo
-directorio.
+directorio. En primer lugar la terminal solicitará al usuario el nombre del archivo a leer, una vez se escriba imprimirá en pantalla la salida requerida.
