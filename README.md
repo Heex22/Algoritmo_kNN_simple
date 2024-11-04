@@ -1,10 +1,14 @@
-###Realizado por Alex Kaseng He Expósito
+### Realizado por Alex Kaseng He Expósito
 
-#Introducción
+# Introducción
 
 La finalidad de este documento es explicar la implementación del código en kNN.py así como enseñar cómo hacer uso de este.
 
-#Implementación
+# El código
+
+Se trata de un algoritmo kNN simplificado para 3 variables y 20 vecinos más cercanos, de momento no se ha agregado aprendizaje supervisado pero eventualmente se implementará.
+
+# Implementación
 
 El código hace uso de 4 funciones 2 de las cuales serán las principales protagonistas, estas consisten en:
 
@@ -22,11 +26,11 @@ strings por puntos flotantes cuando dichos carácteres son letras.
 Además de estas funciones hay un script externo que toma la ruta en la que se encuentra el ejecutable y en esta solicita el archivo a leer, una vez lo encuentra lo lee
 y separa en dos bloques de entradas las cuales se les aplicarán las funciones correspondientes para que a posteriori se imprima en pantalla el formato de salida pedido.
 
-##Nota importante
+## Nota importante
 
 En los datos de ejemplo sólo hay observaciones por lo que los he modificado de tal forma que se conforme al formato de entrada solicitado.
 
-#Uso
+# Uso
 
 Es importante que antes de usarlo, el nombre del archivo a leer sea el mismo en la ruta de lectura en el código del .py además de que su localización debe ser en el mismo
 directorio. En primer lugar la terminal solicitará al usuario el nombre del archivo a leer, una vez se escriba imprimirá en pantalla la salida requerida.
